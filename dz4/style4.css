@@ -1,0 +1,36 @@
+#total-back {
+    background-color: blue
+}
+.header {
+    color: crimson;
+}
+.home {
+    font-size:15px;
+    color: brown;
+    font-style:italic;
+    text-decoration: underline;       
+}
+.profile {
+    font-size:20px;
+    color:chartreuse;
+    font-style:italic;
+    text-decoration: underline;
+}
+.friends {
+    font-size:25px;
+    color:deeppink;
+    font-style:italic;
+    text-decoration: underline;
+}
+#welcome {
+    color: gold;
+}
+#here {
+    background-color: aqua;
+}
+#resp {
+    background-color: fuchsia;
+}
+hr {height: 1px;
+
+}
