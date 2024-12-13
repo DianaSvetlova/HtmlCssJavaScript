@@ -1,0 +1,29 @@
+/* p
+{
+    color: crimson;
+}
+
+.p {color: blue;}
+
+#id {
+    color: aqua;
+} */
+
+/* p
+{
+    color: crimson;
+}
+
+p
+{
+    color: rgb(20, 53, 220);
+} */
+
+p
+{
+    color: crimson;
+}
+
+#id {
+    color: aqua;
+}
