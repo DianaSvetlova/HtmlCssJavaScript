@@ -1,0 +1,41 @@
+.calc {
+    background-color: blue;
+    border-color: blue;
+}
+.white {
+    color: aliceblue;
+}
+.transparent {
+    color: #696666;
+}
+.grey {
+    background-color: rgb(196, 196, 196);
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.fuchsia {
+    color: fuchsia;
+}
+.dark-grey {
+    color: rgb(120, 117, 117);
+}
+.standart-size {
+    width: 40px;
+}
+.big-size {
+    width: 90px;
+}
+#screen {
+    width: 500px;
+}
+table, tr, td {
+    border: 0;
+    border-collapse: collapse;
+  }
+.frame {
+    border: 2px solid #787f81;
+}
