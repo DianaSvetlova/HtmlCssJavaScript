@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calcStyle.css">
+</head>
+<body>
+    <form>
+        <table  class="frame">
+            <thead class="calc">
+            <tr>
+                <td colspan="3"><img src="./calculator_icon_150972.webp" alt="calc" width="15">
+                    <span class="white">Калькулятор</span></td>
+                <td colspan="5"></td>
+                <td><span class="white">—</span></td>
+                <td><span class="transparent">□</span></td>
+                <td><span class="white">✕</span></td></td>
+            </tr>
+            </thead>
+            <tbody class="grey">
+            <tr>
+                <td colspan="2"><span><u>П</u>равка</span></td>
+                <td colspan="2"><span><u>В</u>ид</span></td>
+                <td colspan="2"><span><u>С</u>правка</span></td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td colspan="11">
+                    <input type="number" placeholder="0," id="screen">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="frame">
+                    <div>
+                        <input type="radio" id="hex" name="numberSystem" value="hex">
+                        <label for="hex"><span>Hex</span></label>
+                        <input type="radio" id="dec" name="numberSystem" value="dec">
+                        <label for="dec"><span>Dec</span></label>
+                        <input type="radio" id="oct" name="numberSystem" value="oct">
+                        <label for="oct"><span>Oct</span></label>
+                        <input type="radio" id="bin" name="numberSystem" value="bin">
+                        <label for="bin"><span>Bin</span></label>
+                    </div>
+                </td>
+                <td colspan="7"  class="frame">
+                    <div>
+                        <input type="radio" name="angles" id="degrees" value="degrees">
+                        <label for="degrees"><span>Degrees</span></label>
+                        <input type="radio" name="angles" id="radians" value="radians">
+                        <label for="radians"><span>Radians</span></label>
+                        <input type="radio" name="angles" id="gradients" value="gradients">
+                        <label for="gradients"><span>Gradients</span></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"  class="frame">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="function" value="inv">
+                        <span>Inv</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="function" value="hyp">
+                        <span>Hyp</span>
+                        </label>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><input type="button" value="Backspace" class="grey red big-size"></button></td>
+                <td colspan="2"><input type="button" value="CE" class="grey red big-size"></td>
+                <td colspan="2"><input type="button" value="C" class="grey red big-size"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Sta" class="grey blue standart-size"></td>
+                <td><input type="button" value="F-E" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="(" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value=")" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="MC" class="grey red standart-size"></td>
+                <td><input type="button" value="7" class="grey blue standart-size"></td>
+                <td><input type="button" value="8" class="grey blue standart-size"></td>
+                <td><input type="button" value="9" class="grey blue standart-size"></td>
+                <td><input type="button" value="/" class="grey red standart-size"></td>
+                <td><input type="button" value="Mod" class="grey red standart-size"></td>
+                <td><input type="button" value="And" class="grey red standart-size"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Ave" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="dms" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="Exp" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="In" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="MR" class="grey red standart-size"></td>
+                <td><input type="button" value="4" class="grey blue standart-size"></td>
+                <td><input type="button" value="5" class="grey blue standart-size"></td>
+                <td><input type="button" value="6" class="grey blue standart-size"></td>
+                <td><input type="button" value="*" class="grey red standart-size"></td>
+                <td><input type="button" value="Or" class="grey red standart-size"></td>
+                <td><input type="button" value="Xor" class="grey red standart-size"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Sum" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="sin" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="x^y" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="log" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="MS" class="grey red standart-size"></td>
+                <td><input type="button" value="1" class="grey blue standart-size"></td>
+                <td><input type="button" value="2" class="grey blue standart-size"></td>
+                <td><input type="button" value="3" class="grey blue standart-size"></td>
+                <td><input type="button" value="." class="grey red standart-size"></td>
+                <td><input type="button" value="Lsh" class="grey red standart-size"></td>
+                <td><input type="button" value="Not" class="grey red standart-size"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="s" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="cos" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="x^3" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="n!" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="M+" class="grey red standart-size"></td>
+                <td><input type="button" value="0" class="grey blue standart-size"></td>
+                <td><input type="button" value="+/-" class="grey blue standart-size"></td>
+                <td><input type="button" value="," class="grey blue standart-size"></td>
+                <td><input type="button" value="+" class="grey red standart-size"></td>
+                <td><input type="button" value="=" class="grey red standart-size"></td>
+                <td><input type="button" value="Int" class="grey red standart-size"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Dat" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="tan" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="x^2" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="1/x" class="grey fuchsia standart-size"></td>
+                <td><input type="button" value="pi" class="grey blue standart-size"></td>
+                <td><input type="button" value="A" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="B" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="C" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="D" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="E" class="grey dark-grey standart-size"></td>
+                <td><input type="button" value="F" class="grey dark-grey standart-size"></td>
+            </tr>
+        </tbody>
+        </table>
+    </form>
+</body>
+</html>
