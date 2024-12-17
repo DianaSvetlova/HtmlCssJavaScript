@@ -30,7 +30,11 @@
     width: 90px;
 }
 #screen {
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 300px;
+>>>>>>> e0fccc2d8dd305a1dfbc2197d686a05043a7143f
 }
 table, tr, td {
     border: 0;
