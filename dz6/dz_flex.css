@@ -1,0 +1,41 @@
+.wrapper {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header, .footer {
+    background-color: gold;
+}
+
+.header {
+    height: 10%;
+}
+
+.footer {
+    height: 10%;
+}
+
+.body {
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body > div {
+    background-color: gold;
+}
+
+.article {
+    width: 255px;
+}
+
+.nav {
+    width: 65px;
+}
+
+.ads {
+    width: 65px;
+}
