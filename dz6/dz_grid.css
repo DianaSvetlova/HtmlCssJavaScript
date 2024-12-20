@@ -1,0 +1,40 @@
+.wrapper {
+    display: grid;
+    height: 300px;
+    width: 400px;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "article nav ads"
+    "footer footer footer";
+    gap: 5px;
+
+}
+
+.wrapper > div{
+    background-color: gold;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.article {
+    grid-area: article; 
+    width: 255px;  
+}
+
+.nav {
+    grid-area: nav;
+    width: 65px;
+}
+
+.ads {
+    grid-area: ads;
+    width: 65px;
+}
+
+.footer {
+    grid-area: footer;
+}
