@@ -1,0 +1,23 @@
+.d1 {
+    /* height: 100px; */
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+
+}
+
+.d2 {
+    height: 100px;
+    background-color: blueviolet;
+    /* margin-left: 20px; */
+    /* margin: 20px; */
+    /* margin: 20px 10px 15px 5px; */
+    margin: 20px 0;
+}
+
+mark {
+    background-color: blueviolet;
+}
