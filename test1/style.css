@@ -1,0 +1,91 @@
+.header {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+
+}
+
+.nav {
+    background-color: darkgray;
+    border:1px solid black;
+    font-size: 12px;
+    padding: 5px;
+    /* width: 20%; */
+    margin: 10px;
+    
+    
+}
+
+.ads {
+    background-color: darkgray;
+    border:1px solid black;
+    position: relative;
+    bottom: 0;
+    margin: 10px;
+    /* width: 20%; */
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+}
+
+.me {
+    background-color: darkgray;
+    border:1px solid black;
+    padding: 10px;
+    /* width: 30%; */
+    margin: 10px;
+}
+
+.red {
+    font-size: 12px;
+}
+
+.friends {
+    background-color: darkgray;
+    border:1px solid black;
+    margin: 10px;
+    /* width: 30%; */
+}
+
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+}
+
+.info {
+    background-color: darkgray;
+    border:1px solid black;
+    /* width: 50%; */
+    margin: 10px;
+}
+
+
+
+
+
+
+
+.photo {
+    background-color: darkgray;
+    border:1px solid black;
+    margin: 10px;
+    /* width: 50%; */
+}
