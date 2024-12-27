@@ -1,0 +1,73 @@
+#p::after {
+    content: "что-то после";
+}
+
+#p::before {
+    content: "что-то перед";
+    color: red;
+}
+
+.links:link {
+    color: green;
+}
+
+.links:visited {
+    color: orange;
+}
+
+.links:active {
+    color: rgb(128, 0, 0);
+}
+
+.hover-div:hover {
+    background-color: chartreuse;
+}
+
+#hover-p:hover {
+    color: blue;
+    background-color: aqua;
+    /* cursor: pointer; */
+    /* cursor: wait; */
+    /* cursor: not-allowed; */
+    /* cursor: zoom-out; */
+    cursor: crosshair;
+}
+
+.empty:empty {
+    height: 20px;
+    background-color: lightblue;
+}
+
+.child:first-child {
+    background-color: darkgoldenrod;
+}
+
+.child:last-child {
+    background-color: aquamarine;
+}
+
+.child:nth-child(even) {
+    color: blue;
+}
+
+.child:nth-child(odd) {
+    color: rgb(255, 200, 0);
+}
+
+.child:nth-child(3n+2) {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    a {
+        display: none;
+    }
+
+    .media {
+        width: 60%;
+        background-color: blue;
+    }
+
+
+    
+}
