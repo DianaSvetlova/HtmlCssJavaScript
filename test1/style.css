@@ -1,0 +1,167 @@
+
+
+.header {
+    background-color: cornflowerblue;
+    height: 30%;
+    margin: 0 10px;
+}
+
+.table {
+    padding: 2px;
+}
+
+.vk {
+    width: 20%;
+    text-align: left;
+    vertical-align:bottom;
+}
+
+.search {
+    width: 20%;
+    text-align: center;
+}
+
+.bell {
+    width: 5%;
+    text-align: center;
+}
+
+.nota {
+    width: 5%;
+    text-align: center;
+}
+
+.chat {
+    width: 80%;
+    text-align: left;
+}
+
+.av {
+    width: 20%;
+}
+
+.av-pic {
+   width: 30px;
+   border-radius: 50%;
+   vertical-align: middle;
+}
+
+.name {
+    width: 20%;
+    vertical-align: middle;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color:azure;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.nav {
+    background-color: darkgray;
+    border:1px solid black;
+    padding: 5px;
+    height:80%;
+    margin: 10px;
+}
+
+.ads {
+    background-color:bisque;
+    border:1px solid black;
+    position: relative;
+    bottom: 0;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+}
+
+.me {
+    background-color: darkgray;
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.red {
+    font-size: 16px;
+    width: 80%;
+}
+
+.friends {
+    background-color: darkgray;
+    border:1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+.table-friends {
+    width: 100%;
+}
+
+.img-friends {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+}
+
+.info {
+    background-color: darkgray;
+    border:1px solid black;
+    margin: 10px;
+}
+
+.info > table {
+    width: 100%;
+}
+
+.my-name {
+    font-size: 20px;
+}
+
+.photo {
+    background-color: darkgray;
+    border:1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.blue {
+    color: rgb(6, 73, 197);
+}
+
+.grey {
+    color: lightgray;
+}
+
