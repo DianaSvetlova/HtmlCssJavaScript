@@ -1,0 +1,30 @@
+$redColor: red;
+$mainColor: blue;
+
+@mixin text {
+    font-size: 20px;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    background-color: $redColor;
+    
+    span {
+        color: $redColor;
+        font-size: 20px;
+    }
+
+    &-main {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(136, 0, 255);
+
+    #main-1 {
+        @include text;
+
+    }
+    }
+    }

@@ -1,0 +1,71 @@
+.circle {
+    position: relative;
+    animation-name: circlee;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+
+    
+}
+
+.circle:hover {
+    animation-play-state: running;
+}
+
+@keyframes circlee {
+    from {
+        width: 200px;
+        height: 200px;
+        border-radius: 50% ;
+        background-color: red;
+        left: 50px;
+    }
+    20% {
+        width: 400px;
+        height: 200px;
+        border-radius: 50% ;
+        background-color: rgb(8, 0, 255);
+        left: 50px;
+        top: 100px;
+    }
+    40% {
+        width: 200px;
+        height: 500px;
+        border-radius: 30% ;
+        background-color: rgb(204, 0, 255);
+        bottom: 20px;
+    }
+    60% {
+        width: 100px;
+        height: 100px;
+        border-radius: 10% ;
+        background-color: rgb(255, 196, 0);
+        top: 100px;
+    }
+    80% {
+        width: 100px;
+        height: 200px;
+        border-radius: 50% ;
+        background-color: rgb(0, 145, 255);
+    }
+    to { 
+        width: 300px;
+        height: 300px;
+        border-radius: 10px ;
+        background-color: green;
+    }
+}
+
+.button {
+    background-color: aqua;
+    transition: background-color 1s, font-size 4s;
+    /* transition: 4s; */
+
+    }
+    
+    .button:hover {
+    background-color: lightcoral;
+    font-size: 130px;
+    }
