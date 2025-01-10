@@ -1,0 +1,90 @@
+.wrapper {
+    background-color: rgb(242, 223, 210);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+header {
+    background-color: black;
+
+}
+
+.my-active {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.my-passive {
+    color: white !important;
+}
+
+.my-passive:active {
+    color: orange !important;
+    background-color: aliceblue !important;
+}
+
+.my-pointer:hover {
+    cursor:grab !important;
+}
+
+main {
+    background-color: orange; 
+    /* justify-self:start;
+    align-self: start; */
+    
+    /* position: relative; 
+    top: 0px ; */
+
+    display: flex; 
+    flex-direction:column;
+    justify-content:space-b; 
+
+    /* display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-items: start;
+    grid-template-rows: repeat(5, 20%);*/
+
+
+    gap: 5px; 
+}
+
+.photo {
+    background-color: rgb(249, 191, 82);
+    align-self: center;
+    margin-top: 5px;    
+}
+
+.sort {
+    background-color: rgb(249, 191, 82);
+    
+}
+
+.character {
+    background-color: rgb(249, 191, 82);
+
+}
+
+.root {
+    background-color: rgb(249, 191, 82);
+
+}
+
+.behavior {
+    background-color: rgb(249, 191, 82);
+    margin-bottom: 5px;
+
+}
+
+
+footer {
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+
+    /* position: relative;
+    bottom: 0px; */
+}
+
