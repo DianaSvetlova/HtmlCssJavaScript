@@ -1,0 +1,99 @@
+.wrapper {
+    background-color: rgb(242, 223, 210);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+header {
+    background-color: black;
+
+}
+
+.my-active {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.my-passive {
+    color: white !important;
+}
+
+.my-passive:active {
+    color: orange !important;
+    background-color: aliceblue !important;
+}
+
+.my-pointer:hover {
+    cursor:grab !important;
+}
+
+main {
+    background-color: orange; 
+    /* justify-self:start;
+    align-self: start; */
+    
+    /* position: relative; 
+    top: 0px ; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+    
+}
+
+.info {
+    background-color: rgb(224, 150, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 50%;
+    margin: 10px;
+}
+
+.photo {
+    align-self: center;
+    background-color: burlywood;
+    margin-bottom: 10px;
+    /* width: 50%; */
+
+}
+
+.name {
+    background-color: rgb(241, 178, 60);
+    /* height: 50%; */
+    
+}
+
+.education {
+    background-color:rgb(224, 150, 12);
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+footer {
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+
+    /* position: relative;
+    bottom: 0px; */
+}
+
+@media screen and (max-width: 550px)  {
+
+  
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

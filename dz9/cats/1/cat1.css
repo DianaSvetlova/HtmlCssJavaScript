@@ -1,0 +1,97 @@
+.wrapper {
+    background-color: orange;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+header {
+    background-color: black;
+
+}
+
+.my-active {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.my-passive {
+    color: white !important;
+}
+
+.my-passive:active {
+    color: orange !important;
+    background-color: aliceblue !important;
+}
+
+.my-pointer:hover {
+    cursor:grab !important;
+}
+
+main {
+    background-color: rgb(253, 191, 77); 
+    /* justify-self:start;
+    align-self: start; */
+    
+    /* position: relative; 
+    top: 0px ; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.photo {
+    background-color: rgb(232, 161, 29);
+    width: 20%;
+}
+
+.photo-cat1 {
+    width: 100%;
+}
+
+.name {
+    text-align: center;
+    font-family: tilda;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.info {
+    background-color: rgb(232, 161, 29);
+    width: 70%;
+}
+
+.acc-color {
+    background-color: burlywood !important;
+}
+
+
+
+footer {
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+
+    /* position: relative;
+    bottom: 0px; */
+}
+
+@font-face {
+    font-family: tilda;
+    src: url(./fonts/TildaSans/TildaSans-VF.ttf);
+    src: url(./fonts/TildaSans/TildaSans-VF.woff);
+    src: url(./fonts/TildaSans/TildaSans-VF.woff2);
+}
+
+@media screen and (max-width: 550px)  {
+
+  
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
