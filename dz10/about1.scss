@@ -1,0 +1,71 @@
+$mainColor: orange;
+
+$subColor: rgb(245, 202, 122);
+
+$photoWidth: 300px;
+
+@mixin block {
+    width: 50%;
+    margin: 10px;
+    background-color: $mainColor; 
+}
+
+@mixin info {
+    background-color: $subColor;
+    margin: 20px 10px;
+}
+
+@mixin education-photo {
+    background-color: $subColor;
+    margin: 20px;
+}
+
+.wrapper {
+    background-color:burlywood;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around; 
+        @include block;
+        
+        &__photo {
+            @include info;
+        }
+
+        &__name {
+            @include info;
+        }
+    }
+
+    .education {
+        @include block;
+
+        &__school {
+            @include education-photo;
+
+            &__photo {
+                width: $photoWidth;
+            } 
+        }
+
+        &__college{
+            @include education-photo;
+            &__photo {
+                width: $photoWidth;
+            }
+        }
+
+        &__unver {
+            @include education-photo;
+            &__photo {
+                width: $photoWidth;
+            }
+        }
+    }
+    
