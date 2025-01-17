@@ -1,0 +1,53 @@
+.wrapper {
+  background-color: burlywood;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px;
+  background-color: orange;
+}
+.info__photo {
+  background-color: #f5ca7a;
+  margin: 20px 10px;
+}
+.info__name {
+  background-color: #f5ca7a;
+  margin: 20px 10px;
+}
+
+.education {
+  width: 50%;
+  margin: 10px;
+  background-color: orange;
+}
+.education__school {
+  background-color: #f5ca7a;
+  margin: 20px;
+}
+.education__school__photo {
+  width: 300px;
+}
+.education__college {
+  background-color: #f5ca7a;
+  margin: 20px;
+}
+.education__college__photo {
+  width: 300px;
+}
+.education__unver {
+  background-color: #f5ca7a;
+  margin: 20px;
+}
+.education__unver__photo {
+  width: 300px;
+}
+
+/*# sourceMappingURL=about1.css.map */
