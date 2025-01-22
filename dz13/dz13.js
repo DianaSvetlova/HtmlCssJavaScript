@@ -1,18 +1,18 @@
 // task1
 
-// let arr = [12,2589,657,12,958,657,657,12589,12,2]
+// const arr = [12,2589,657,12,958,657,657,12589,12,2]
 // let arr2 = []
 
-// arr = arr.sort()
+// const arr3 = arr.sort()
 
 
-// for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr3.length; i++) {
 
-//     if (arr[i]!==arr[i+1]) {
+//     if (arr3[i]!==arr3[i+1]) {
 //         arr2 = arr2.concat(arr[i])
 //     }
 // }
-// console.log(arr);
+// console.log(arr3);
 // console.log(arr2);
 
 
@@ -21,7 +21,7 @@
     // let fact = 8 
     // let length = 8 
    
-    // for (i=1; i<(length-1); i++) {
+    // for (let i=1; i<(length-1); i++) {
 
     //     fact = fact*(length-i)
     // }
@@ -53,6 +53,53 @@
 // }
 // console.log(arr2);
 // console.log(arr2.length);
+
+
+
+
+
+// const arr = [12,2589,657,12,958,12,657,657,12589,12,2,12]
+
+// const arr2 = arr.sort()
+
+// console.log(arr2);
+
+// let arr3=[]
+
+
+// for (let i = 0; i < arr.length; i++) {
+
+    
+//     let count = 1
+
+//     if  (arr2[i]!==arr2[i+1] && arr2[i]!==arr2[i-1]){
+//         console.log(arr2[i], '1');}
+
+//         else if (arr2[i]===arr2[i+1]) {
+//            count++
+        
+//         console.log(arr2[i], count);
+           
+//     } 
+        
+//     }
+
+
+
+
+
+// let arr = [1, 3, 4, 1, 1, 3, 4, 5,8];
+// let count = {};
+
+// for (let elem of arr) {
+//     if (count[elem] === undefined) {
+//     count[elem] = 1;
+//     } else {
+//     count[elem]++;
+//     }
+// }
+// console.log(count); // выведет {1: 3, 3: 2, 4: 2, 5: 1}
+
 
 
 // task5
@@ -94,7 +141,7 @@
 // for (let i = 0; i < party.length; i++) {
 
 //     if (party[i].age>30) {
-//         partyAge = partyAge.concat(party[i].name)
+//         partyAge = partyAge.concat(party[i])
 //     }
 // }
 
@@ -112,3 +159,32 @@
 //     arr = arr.concat(i)  
 // }
 //     console.log(arr);
+
+// task8
+
+// variant1
+
+// const str = 'желание'
+
+// let arr = str.split('')
+
+// for (let i=0; i<(arr.length/2); i++) {
+//     const temp = arr[i]
+//     arr[i] = arr[arr.length-(i+1)]
+//     arr[arr.length-(i+1)] = temp
+// }
+
+// console.log(arr.join(''));
+
+
+// variant2
+
+// const str = 'желание'
+
+// let reversedStr = ''
+
+// for (let i = str.length-1; i>=0; i--) {
+//     reversedStr = reversedStr + str[i]   
+// }
+
+// console.log(reversedStr);
