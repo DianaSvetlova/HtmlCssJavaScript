@@ -68,3 +68,32 @@
 //     }   
 
 // console.log(sumRange(3, 6));
+
+// task 5
+
+// function oneOfaKind (str) {
+
+//     let arr = str.toLowerCase().split('')
+
+//     // console.log(arr);    
+    
+//        for (let i=0; i<arr.length; i++) {
+
+//         for (let j=i+1; j<arr.length; j++) {
+
+//             if (arr[i] === arr[j]) {               
+                
+//                 arr.splice(j,1)
+                
+//                 arr.splice(i,1," ")
+
+//             }                        
+            
+//             }     
+                      
+//         }    
+//         const arr2 = arr.join('').trim().split('')            
+//         console.log(arr2);
+//     }      
+
+// oneOfaKind ('шалаш')
