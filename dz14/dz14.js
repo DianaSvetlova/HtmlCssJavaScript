@@ -97,3 +97,61 @@
 //     }      
 
 // oneOfaKind ('шалаш')
+
+
+// task6
+
+// function massive (n) {
+//     let arr =[]
+//     while (arr.length < n) {
+//         let i = Math.floor(Math.random() * 101)
+//         arr = arr.concat(i) 
+//     }
+
+//     console.log(arr);
+
+//     let max = arr[0]
+//     for (let i=0; i<n; i++) {
+//         if (max < arr[i]) {
+//             max=arr[i]
+//         }
+//     } 
+//     console.log('max=',max);
+
+//     let min = arr[0]
+//     for (let i=0; i<n; i++) {
+//         if (min > arr[i]) {
+//             min=arr[i]
+//         }
+//     } 
+//     console.log('min=',min);
+
+//     let sum = 0
+//     for (let i=0; i<n; i++) {
+//         sum += arr[i]
+//     }
+//     console.log('sum=',sum);
+
+//     let arithmeticMean = sum/n
+//     console.log('arithmeticMean=',arithmeticMean);
+   
+// }
+
+// massive (5)
+
+// task7
+
+// function fibona44i (n) {
+
+//     let arr =[0,1]
+//     for (let i=2; i<n; i++) {
+//         arr[i] = arr[i-1]+arr[i-2] 
+//         // arr = arr.concat(arr[i])
+//     }
+
+//     // arr.pop()
+//     console.log(arr);
+// }
+
+// fibona44i (10)
+
