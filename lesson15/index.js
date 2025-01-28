@@ -30,6 +30,8 @@
 
 // input (hello)
 
+
+
 // function AtoB (callback) {
 //     const trans = 'bus'
 //     const friend = 'sania'
@@ -148,7 +150,10 @@
 
 // const resultFilter = arr.filter(el=> el%3 ===0)
 // console.log(resultFilter);
+// console.log(arr);
 
+
+// const resultSort = arr.sort()
 // const resultSort = arr.sort((a,b)=>a-b)
 // console.log(resultSort);
 // console.log(arr);
@@ -158,9 +163,11 @@
 // console.log(arr);
 
 
-// const toflatArr = [[1,[5,6],2,3],[5,6],7]
+// const toflatArr = [[1,2,[5,6],2,3],[5,6],7]
 // const flatArr = toflatArr.flat()
 // console.log(flatArr);
+// console.log(toflatArr);
+
 
 // const arr = [31,813,8,73,4,74,38,54,83,37]
 
@@ -185,26 +192,76 @@
 // })
 // console.log(arr);
 
+
 // const resultMap = arr.map(el => el*2)
 // console.log(resultMap);
+// console.log(arr);
+
+
 
 // const flatMapArr = [[2,3], [3], [4]]
 
 // const resFlatMap = flatMapArr.flatMap(el=>el*3)
 // console.log(resFlatMap);
+// console.log(flatMapArr);
+
+// const resultFlatMap = flatMapArr.flatMap(el => {
+//     if (el.length >1) {
+//         return el.flatMap(el => el*8)
+        
+//     } else {
+//         return el*8
+//     }
+// }
+
+// )
+
+// console.log(resultFlatMap);
 
 
-const arr = [31,813,8,73,4,74,38,54,83,37]
+// const arr = [31,813,88,8,73,4,74,38,54,83,37]
 
-// const resultFind = arr.find(el => el === 8)
+// const resultFind = arr.find(el => el%8===0)
 // console.log(resultFind);
 
 // const resultFindIndex = arr.findIndex(el => el === 8)
 // console.log(resultFindIndex);
 
-const sum = arr.reduce((acc,el) => acc+el, 0)
-console.log(sum);
+// const sum = arr.reduce((acc,el) => acc+el, 0)
+// console.log(sum);
+// console.log(arr);
 
+
+// const arr1 = arr.reduce((acc,el) => acc.concat(el*3), [])
+// console.log(arr1);
+
+const arr = [31,813,8,73,4,74,38,54,83,37]
+
+
+const resultReduce = arr.reduce(function (acc, num) {
+    if (filterEven(num)) {
+        const squared = square(num)
+
+        if (filterGreaterThanFifty(squared)) {
+            acc.push(squared)
+        }
+    }
+
+    return acc
+}, [])
+
+function square(num){
+    return num*num
+}
+
+function filterGreaterThanFifty(num) {
+    return num >50
+}
+
+function filterEven(num) {
+    return num%2===0
+}
+console.log(resultReduce);
 
 
 
