@@ -1,5 +1,26 @@
 
+// // 'use strict'
 // console.log(this);
+
+// function f() {
+// 	console.log(this);
+	
+// }
+// f()
+
+// const obj = {
+//     name: 'dina',
+//     age: 30,
+//     greet: function () {
+//         // console.log(`Hi, ${this.name}`); 
+// 		console.log(this);
+		
+//     },
+// }
+
+// obj.greet()
+
+
 
 // const objArrow = {
 //     name: 'dina',
@@ -22,11 +43,14 @@
 //     },
 // }
 
+// obj.greet()
+
+
 // const obj2 = {
 //     name: 'patrick',
 //     age: 54,
 // }
-// obj.greet.bind(obj2)(343)
+// obj.greet.bind(obj2)(42)
 
 // obj.greet.bind({name:'bind', age:30})()
 // obj.greet.call({name:'call', age:30})
@@ -50,43 +74,39 @@
 //     console.log(this.age);
 //     }
 //     static getClassName() {
-//         return 'Person'
+//         return 'smth'
 //     }
 
 
 //     }
-//     const alice = new Person('Alice');
+//     const alice = new Person('Alice', 36);
 //     alice.greet(); // Hello, my name is Alice
 //     console.log(Person.getClassName());
     
 
-// class Animal {
-//     constructor(name) {
-//         this.name=name;
-//     }
-//         greet() {
-//             console.log(`Hi, my name is ${this.name}`);
-//     }
-// }
+class Animal {
+    constructor(name) {
+        this.name=name;
+    }
+        greet() {
+            console.log(`Hi, my name is ${this.name}`);
+    }
+}
 
-// class Dog extends Animal {
-//     constructor (name, type) {
-//         super(name)
-//         this.type = type
-//     }
+class Dog extends Animal {
+    constructor (name, type) {
+        super(name)
+        this.type = type
+    }
+    bark() {
+        console.log(`${this.type} ${this.name} barks!`);
+    }
+}
 
-//     bark() {
-//         console.log(`${this.type} ${this.name} barks!`);
-        
-//     }
-// }
-
-// const rex = new Dog('Rex', 'taxa')
-// rex.greet()
-// rex.bark()
-
-
-// console.log(rex);
+const rex = new Dog('Rex', 'taxa')
+rex.greet()
+rex.bark()
+console.log(rex);
 
 
 // console.log(1);
@@ -193,21 +213,21 @@
 // postData();
 
 
-async function fetchUserData() {
-	try {
-		const response = await fetch(
-			'https://jsonplaceholder.typicode.com/posts/2'
-		);
-        console.log(response);
+// async function fetchUserData() {
+// 	try {
+// 		const response = await fetch(
+// 			'https://jsonplaceholder.typicode.com/posts/2'
+// 		);
+//         console.log(response);
         
-		if (!response.ok) {
-			throw new Error('Network WOW');
-		}
-		const user = await response.json();
-		console.log(user);
-	} catch (error) {
-		console.error('Error:', error);
-	}
-}
+// 		if (!response.ok) {
+// 			throw new Error('Network WOW');
+// 		}
+// 		const user = await response.json();
+// 		console.log(user);
+// 	} catch (error) {
+// 		console.error('Error:', error);
+// 	}
+// }
 
-fetchUserData();
+// fetchUserData();
