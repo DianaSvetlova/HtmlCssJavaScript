@@ -84,34 +84,36 @@
 //     console.log(Person.getClassName());
     
 
-class Animal {
-    constructor(name) {
-        this.name=name;
-    }
-        greet() {
-            console.log(`Hi, my name is ${this.name}`);
-    }
-}
+// class Animal {
+//     constructor(name) {
+//         this.name=name;
+//     }
+//         greet() {
+//             console.log(`Hi, my name is ${this.name}`);
+//     }
+// }
 
-class Dog extends Animal {
-    constructor (name, type) {
-        super(name)
-        this.type = type
-    }
-    bark() {
-        console.log(`${this.type} ${this.name} barks!`);
-    }
-}
+// class Dog extends Animal {
+//     constructor (name, type) {
+//         super(name)
+//         this.type = type
+//     }
+//     bark() {
+//         console.log(`${this.type} ${this.name} barks!`);
+//     }
+// }
 
-const rex = new Dog('Rex', 'taxa')
-rex.greet()
-rex.bark()
-console.log(rex);
+// const rex = new Dog('Rex', 'taxa')
+// rex.greet()
+// rex.bark()
+// console.log(rex);
 
 
 // console.log(1);
 // setTimeout(() => console.log(2), 1000)
 // console.log(3);
+
+
 
 // function fetchData() {
 //     return new Promise((resolve, reject) => {
@@ -121,6 +123,7 @@ console.log(rex);
 //         message: 'failed',
 //         code: 500,
 //     }
+//     // resolve(data)
 //     reject(error);
 //     }, 1000);
 //     });
@@ -141,6 +144,7 @@ console.log(rex);
 // 	return new Promise((resolve,reject) => {
 // 		setTimeout(() => {
 // 			const data = { name: 'Alice', age: 25 };
+//             // resolve(data);
 // 			reject(data);
 // 		}, 1000);
 // 	});
@@ -153,7 +157,7 @@ console.log(rex);
 // 	} catch (error) {
 // 		console.error(error);
 // 	} finally {
-//     console.log('fvfdv');
+//     console.log('finally');
 //     }
     
 // }
@@ -167,7 +171,7 @@ console.log(rex);
 // 		const response = await fetch(
 // 			'https://jsonplaceholder.typicode.com/users/2'
 // 		);
-//         console.log(response);
+//         // console.log(response);
         
 // 		if (!response.ok) {
 // 			throw new Error('Network response was not ok');
@@ -231,3 +235,13 @@ console.log(rex);
 // }
 
 // fetchUserData();
+
+
+function fetchData() {
+    fetch('https://jsonplaceholder.typicode.com/users/1')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log('Err', error));
+    
+}
+fetchData()
