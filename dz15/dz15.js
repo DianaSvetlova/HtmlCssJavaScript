@@ -1,7 +1,6 @@
 // task 1a
 
-// const arr = [258,456,0,75,135,-89,87,-13,0,7896,0,-3219]
-// console.log(arr);
+// function arithmeticMean (arr) {
 
 // const arrEven = arr.filter(el => el%2===0)
 // console.log(arrEven);
@@ -10,33 +9,34 @@
 
 // const arithmeticMean = sum/arrEven.length
 // console.log(arithmeticMean);
+// }
+
+// arithmeticMean ([258,456,0,75,135,-89,87,-13,0,7896,0,-3219])
 
 
 // task 1b
 
-// const arrPositive = arr.filter(el => el>0)
-// console.log(arrPositive);
+// function sr (arr) {
+//     const arrPositive = arr.filter(el => el>0)
+//     console.log(arrPositive);
+// }
+// sr ([258,456,0,75,135,-89,87,-13,0,7896,0,-3219])
+
 
 
 // task 1c
 
-// variant1
-// const arrThree = arr.filter(el => el%3===0)
-// console.log(arrThree);
+// function summa3 (arr) {
+//     const sum = arr.filter(el => el%3===0).reduce((acc,el) => acc+el, 0)
+//     console.log(sum);
+// }
+// summa3 ([258,456,0,75,135,-89,87,-13,0,7896,0,-3219])
 
-// const sum = arrThree.reduce((acc,el) => acc+el, 0)
-// console.log(sum);
-
-
-// variant2
-// const sum = arr.filter(el => el%3===0).reduce((acc,el) => acc+el, 0)
-// console.log(sum);
 
 // task 2
 
-// const arr = [258,456,0,75,135,-89,87,-13,0,7896,0,-3219]
-// console.log(arr);
-
+// function nearMiddle (arr) {
+    
 // const sum = arr.reduce((acc,el) => (acc+el), 0)
 
 // const arithmeticMean = sum/arr.length
@@ -55,13 +55,14 @@
 //         console.log(arr[iArithmeticMean+1]);} else {
 //         console.log(arr[iArithmeticMean-1]);
 //     }
+// }
 
-//это точно можно как-то проще записать, но я пока не понимаю, как) по действия проще)
+// nearMiddle ([258,456,0,75,135,-89,87,-13,0,7896,0,-3219])
 
 
 // task 3
 
-// const arr =[21,0,25,0,-5,36,0,98]
+// function sumMiddle (arr) {
 
 // const firstZero = arr.indexOf(0)
 // const lastZero = arr.lastIndexOf(0)
@@ -74,6 +75,9 @@
 // }, 0)
 
 // console.log(sum);
+
+// }
+// sumMiddle ([21,0,25,0,-5,36,0,98])
 
 
 // task 4
