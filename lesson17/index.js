@@ -1,4 +1,4 @@
-// const pTextId = document.getElementById('txt c1')
+// const pTextId = document.getElementById('txt')
 // console.log(pTextId);
 
 // const pTextClass = document.getElementsByClassName('txt c2')
@@ -7,68 +7,85 @@
 // const pTag = document.getElementsByTagName('p')
 // console.log(pTag);
 
+// const pQuery = document.querySelector('p')
+// console.log(pQuery);
+
 // const pQuery = document.querySelector('.c3')
+// console.log(pQuery);
+
+// const pQuery = document.querySelector('#txt')
 // console.log(pQuery);
 
 // const pQueryAll = document.querySelectorAll('.txt')
 // console.log(pQueryAll);
 
+
+
 // const pTextId = document.getElementById('txt')
 
 // // pTextId.innerText = 'new text'
 
-// // setTimeout(()=>pTextId.innerText = 'new innerText',2000)
+// setTimeout(()=>pTextId.innerText = 'new innerText',2000)
 
-// // setTimeout(()=>pTextId.innerContent = 'new innerContent',4000)
+// setTimeout(()=>pTextId.textContent = 'new inner Content',4000)
 
-// // setTimeout(()=>pTextId.innerHTML = 'new innerHTML',8000)
+// setTimeout(()=>pTextId.innerHTML = 'new inner HTML',6000)
 
-// // setTimeout(()=>{
-// //     pTextId.innerText = 'new innerText';
-// //     pTextId.style.color = 'red';
-// //     pTextId.style.fontSize = '20px';
+// setTimeout(()=>{
+//     pTextId.innerText = 'new innerText';
+//     pTextId.style.color = 'red';
+//     pTextId.style.fontSize = '20px';
 
-// // },2000)
+// },2000)
 
-// // setTimeout(()=>{
-// //     pTextId.textContent = 'new textContent';
-// //     pTextId.classList.add('p-style');
-// // },4000)
+// setTimeout(()=>{
+//     pTextId.textContent = 'new textContent';
+//     pTextId.classList.add('p-style');
+// },4000)
 
-// // setTimeout(()=>{
-// //     pTextId.innerHTML = 'new innerHTML';
-// //     pTextId.classList.remove('p-style');
-// // },6000)
+// setTimeout(()=>{
+//     pTextId.innerHTML = 'new innerHTML';
+//     pTextId.classList.remove('p-style');
+// },6000)
 
-// const helloBtn = document.querySelector('#hello')
+// const helloBtn = document.querySelector('#hello0')
 
-// // helloBtn.onclick = () => {alert('hi!')}
+// helloBtn.onclick = () => {alert('hi!')}
 
-// // helloBtn.addEventListener('click', () => {
-// //     alert('hi!')
-// // })
-
-// // helloBtn.addEventListener('click', (event) => {
-// //     console.log(event.target.id);
+// helloBtn.onclick = () => {
+//     const pTextId = document.getElementById('txt')
+//     pTextId.innerText = 'new innerText';
+//     pTextId.style.color = 'red';
+//     pTextId.style.fontSize = '20px';
     
-// // })
+// }
 
-// const inputText = document.querySelector('#inp-text')
+// helloBtn.addEventListener('click', () => {
+//     alert('hi!')
+// })
 
-// // inputText.addEventListener('input', () => {
-// //     console.log(inputText.value);
+// helloBtn.addEventListener('click', (event) => {
+//     console.log(event.target.id);
     
-// // })
+// })
+
+
+const inputText = document.querySelector('#inp-text')
+
+// inputText.addEventListener('input', () => {
+//     console.log(inputText.value);
+    
+// })
 
 // inputText.addEventListener('change', () => {
 //     console.log(inputText.value);
     
 // })
 
-// // window.addEventListener('mousemove', event =>{
-// //     console.log(event.clientX, event.clientY);
+// window.addEventListener('mousemove', event =>{
+//     console.log(event.clientX, event.clientY);
     
-// // })
+// })
 
 // const addMouse = document.querySelector('#add-mouse-move')
 // const removeMouse = document.querySelector('#remove-mouse-move')
@@ -87,7 +104,7 @@
 // }
 
 
-// const list = document.querySelector('ul')
+const list = document.querySelector('ul')
 // const addItem = document.querySelector('#add-item')
 // const removeItem = document.querySelector('#remove-item')
 
@@ -120,7 +137,7 @@
 
 // window.addEventListener('keydown', (event) => {
 //     if (event.key === 'Enter') {
-//         alert('enter')
+//         // alert('enter')
 //         const newItem = document.createElement('li')
 //         const currentItems = document.querySelectorAll('li')
 //         console.log(currentItems);
