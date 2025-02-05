@@ -18,18 +18,15 @@ saveBtn.onclick = () => {
     }
     
 
-    // localStorage.setItem('lastUser', JSON.stringify(userInfo))
-    sessionStorage.setItem('lastUser', JSON.stringify(userInfo))
+    localStorage.setItem('lastUser', JSON.stringify(userInfo))
+    // sessionStorage.setItem('lastUser', JSON.stringify(userInfo))
     console.log(userInfo);
     getLastUser()
-    
-
-    
 }
 
 function getLastUser() {
-    // const lastUser = localStorage.getItem('lastUser')
-    const lastUser = sessionStorage.getItem('lastUser')
+    const lastUser = localStorage.getItem('lastUser')
+    // const lastUser = sessionStorage.getItem('lastUser')
     if (lastUser) {
         const userInfo = JSON.parse(lastUser)
         userNameInfo.innerText = userInfo.userName
