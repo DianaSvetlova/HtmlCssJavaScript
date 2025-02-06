@@ -1,36 +1,35 @@
 // task1
 
 // function isPrime (n) {
-//     for (let i = 2; i<n; i++) {
-//         if (n%i===0) {
-//             return false
+//     for (let i = 2; i<=n; i++) {        
+        
+//         if (n===2) {
+//             return console.log(n, 'is prime')
+//         }  else if (n%i===0) {
+//             return console.log(n, "isn't prime")            
+//         }  else {
+//             return console.log(n, 'is prime');
             
-//         } else {
-//             return true;
 //         } 
 //     }
 // }
-
-// console.log(isPrime (89) ); // почему-то не работает с 1 и 2(((
+// isPrime (2)
 
 
 // task2
 
 // function isPalindrome(str) {
-//     const arr = str.split('')
+//     const arr = str.toLowerCase().split(' ').join('')
 //     console.log(arr);
-//     for (let i = 0; i<arr.length; i++) {
-//         if (arr[i]===arr[arr.length-1]){
-//             return true
-//         } else {
+//     for (let i = 0; i<arr.length/2; i++) {
+//         if (arr[i]!==arr[(arr.length-1)-i]){
 //             return false
-//         }
-
+//         }         
 //     }
+//     return true
 // }
 
-// console.log(isPalindrome('довод'));
-
+// console.log(isPalindrome('А роза упала на лапу Азора'));
 
 
 //task3
@@ -74,23 +73,14 @@
 // function oneOfaKind (str) {
 
 //     let arr = str.toLowerCase().split('')
-
-//     // console.log(arr);    
-    
+//     // console.log(arr);        
 //        for (let i=0; i<arr.length; i++) {
-
 //         for (let j=i+1; j<arr.length; j++) {
-
-//             if (arr[i] === arr[j]) {               
-                
-//                 arr.splice(j,1)
-                
+//             if (arr[i] === arr[j]) {   
+//                 arr.splice(j,1)                
 //                 arr.splice(i,1," ")
-
-//             }                        
-            
-//             }     
-                      
+//             }  
+//             }         
 //         }    
 //         const arr2 = arr.join('').trim().split('')            
 //         console.log(arr2);
