@@ -40,66 +40,17 @@
 
 // task4
 
-// let arr = [12,2589,657,12,958,657,657,12589,12,2]
-// let arr2 = []
-
-// arr = arr.sort()
-
-// for (let i = 0; i < arr.length; i++) {
-
-//     if (arr[i]!==arr[i+1]) {
-//         arr2 = arr2.concat(arr[i])
-//     }
-// }
-// console.log(arr2);
-// console.log(arr2.length);
-
-
-
-
-
-// const arr = [12,2589,657,12,958,12,657,657,12589,12,2,12]
-
-// const arr2 = arr.sort()
-
-// console.log(arr2);
-
-// let arr3=[]
-
-
-// for (let i = 0; i < arr.length; i++) {
-
-    
-//     let count = 1
-
-//     if  (arr2[i]!==arr2[i+1] && arr2[i]!==arr2[i-1]){
-//         console.log(arr2[i], '1');}
-
-//         else if (arr2[i]===arr2[i+1]) {
-//            count++
-        
-//         console.log(arr2[i], count);
-           
-//     } 
-        
-//     }
-
-
-
-
-
-// let arr = [1, 3, 4, 1, 1, 3, 4, 5,8];
+// const arr = [12,18,12,12,36,78,98,98,98,12];
 // let count = {};
 
-// for (let elem of arr) {
-//     if (count[elem] === undefined) {
-//     count[elem] = 1;
+// for (let el of arr) {
+//     if (count[el] === undefined) {
+//     count[el] = 1;
 //     } else {
-//     count[elem]++;
+//     count[el]++;
 //     }
 // }
-// console.log(count); // выведет {1: 3, 3: 2, 4: 2, 5: 1}
-
+// console.log(count);
 
 
 // task5
