@@ -82,37 +82,37 @@
 
 // task 4
 
-// const arr = [21,0,25,0,-5,36,0,98]
+// function move (arr) {
 
+// function toRight (n) {
 
-// function move (n) {
-
-// for (i=0; i<n; i++) {
-    
-//     arr.unshift(arr.pop());
+//     for (let i=0; i<n; i++) {        
+//         arr.unshift('empty');
+//     }
+//     console.log(arr);
+//     }    
+//     toRight (3)
 // }
-// console.log(arr);
-// }
-
-// move (4)
+// move ([21,0,25,0,-5,36,0,98])
 
 
 // task 5
 
-// let arr = [1, 3, 4, 1, 1, 1, 1, 1, 3, 4, 5];
+// let maxSame = function (arr) {
+
 // let count = {};
 
-// for (let elem of arr) {
-//     if (count[elem] === undefined) {
-//     count[elem] = 1;
+// for (let el of arr) {
+//     if (count[el] === undefined) {
+//     count[el] = 1;
 //     } else {
-//     count[elem]++;
+//     count[el]++;
 //     }
 // }
-// console.log(count);
+// // console.log(count);
 
 // const arrCount = Object.values(count)
-// console.log(arrCount);
+// // console.log(arrCount);
 
 // let maxCount = arrCount[1]
 
@@ -121,5 +121,7 @@
 //         maxCount = arrCount[i]
 //     }
 // }
-
 // console.log(maxCount);
+// }
+
+// maxSame([1, 3, 4, 1, 1, 1, 1, 1, 3, 4, 5])
