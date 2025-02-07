@@ -17,7 +17,7 @@
 // task 1b
 
 // function sr (arr) {
-//     const arrPositive = arr.filter(el => el>0)
+//     const arrPositive = arr.filter(el => el>=0)
 //     console.log(arrPositive);
 // }
 // sr ([258,456,0,75,135,-89,87,-13,0,7896,0,-3219])
