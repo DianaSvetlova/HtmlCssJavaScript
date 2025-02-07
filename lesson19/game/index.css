@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;   
+}
+
+.form {    
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: burlywood;  
+}
+
+form {
+    height: 100px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+
+button {
+    width: 100%;
+    background-color: blueviolet;
+    color:bisque;
+}
+

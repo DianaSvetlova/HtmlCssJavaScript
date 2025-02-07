@@ -1,0 +1,16 @@
+body {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;   
+}
+
+table {
+    border: 1px solid black;
+}
