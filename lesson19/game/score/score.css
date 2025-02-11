@@ -1,16 +1,72 @@
 body {
     overflow: hidden;
-    background-color: antiquewhite;
+    
 }
 
 .wrapper {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;   
+    gap: 10px;
+    background-color:rgb(124, 192, 235);
 }
 
-table {
+.table {
     border: 1px solid black;
+    width: 500px;
+    font-family: myFont;
+}
+
+h2 {
+    text-align: center;
+}
+
+#head {
+    background-color: beige;
+    opacity: 0.3;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(odd) {
+    background-color:bisque
+}
+
+td {
+    width: 500px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#new, #again {
+    background-color: aqua;
+    border-radius: 10px; 
+    height: 50px;
+     
+    
+}
+
+#again:hover {
+    cursor: pointer;
+}
+
+#new:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('/lesson8/fonts/Daneehand/Daneehand\ Regular\ Cyr.ttf');
 }

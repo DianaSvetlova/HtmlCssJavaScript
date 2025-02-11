@@ -29,11 +29,12 @@ function addScore(){
     }
     const table = []
     table.push(user)
-    if (score){       
+    if (score){         
         table.push(...JSON.parse(score))
+        console.log(table);        
     } 
-        localStorage.setItem('score',JSON.stringify(table))  
-     window.location.href = '../score/score.html'
+    localStorage.setItem('score',JSON.stringify(table))  
+    window.location.href = '../score/score.html'
 }
 
 
