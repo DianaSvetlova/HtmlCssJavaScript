@@ -3,11 +3,21 @@
 // obj['1'] = 'snumberrr'
 // console.log(obj);
 
+// const data = [[1, 'number'], ['1', 'str']];
+// const personMap = new Map(data);
+// console.log(personMap);
+
+// const data = [['name', 'John'], ['age', 30]];
+// const personMap = new Map(data);
+// console.log(personMap);
+
+
 // const map = new Map()
 // map.set(1, 'number')
 // map.set('1', 'str')
 // map.set(true, true)
 // map.set([true], 'arr')
+
 
 
 // console.log(map);
@@ -16,6 +26,8 @@
 // console.log(map.has('1'));
 // console.log(map.size);
 // map.delete('1')
+// console.log(map.delete('1'));
+
 // console.log(map);
 // console.log(map.size);
 // map.clear()
@@ -65,7 +77,7 @@
 // document.querySelector('a').addEventListener('click', (event) =>{
 //     event.preventDefault()
 //     console.log(event.target.href);
-//     window.location.href = event.target.href +'search'
+//     window.location.href = event.target.href +'search?q=zapros'
     
 // })
 
