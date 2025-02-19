@@ -37,11 +37,11 @@ getBtn.onclick = () => {
 }
 
 putBtn.onclick = () => {
-    const userId = '-OJP0Ghjlx0rDzEXGoEf'
+    const userId = '-OJSznMKswdKUYPiT49_'
     const user = {
-        firstName: "Olaaa",
-        lastName: 'Svet',
-        age:36,
+        firstName: "Kate",
+        lastName: 'Tartt',
+        age:21,
 
     }
     fetch(`https://test-project-ded08-default-rtdb.firebaseio.com/user/${userId}.json`, {
@@ -57,7 +57,7 @@ putBtn.onclick = () => {
 }
 
 delBtn.onclick = () => {
-    const userId = '-OJOzmArxsJBuWvCItA5'
+    const userId = '-OJT5Std64qwjyhrPZaS'
 
     fetch(`https://test-project-ded08-default-rtdb.firebaseio.com/user/${userId}.json`, {
         method: 'DELETE',
